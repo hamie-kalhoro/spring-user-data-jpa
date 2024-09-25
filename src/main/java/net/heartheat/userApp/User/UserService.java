@@ -2,8 +2,8 @@ package net.heartheat.userApp.User;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UserService {
@@ -21,6 +21,10 @@ public class UserService {
 
     public void removeUserById(Long id) {
         userRepository.deleteById(id);
+    }
+
+    public Optional<User> updateUserInfo(Long id) {
+        return userRepository.findById(id);
     }
 
 }
