@@ -23,4 +23,10 @@ public class UserController {
         return userService.getAllUsers();
     }
 
+    @DeleteMapping("/delete-userbyid/{userId}")
+    public boolean deleteUserById(@PathVariable Long userId) {
+        userService.removeUserById(userId);
+        return true;
+    }
+
 }
