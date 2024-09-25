@@ -1,5 +1,7 @@
-package net.heartheat.userApp.User;
+package net.heartheat.userApp.controller;
 
+import net.heartheat.userApp.service.UserService;
+import net.heartheat.userApp.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;

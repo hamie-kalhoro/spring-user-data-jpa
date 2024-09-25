@@ -1,5 +1,7 @@
-package net.heartheat.userApp.User;
+package net.heartheat.userApp.service;
 
+import net.heartheat.userApp.entity.User;
+import net.heartheat.userApp.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

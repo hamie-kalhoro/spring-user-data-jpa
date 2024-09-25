@@ -1,5 +1,6 @@
-package net.heartheat.userApp.User;
+package net.heartheat.userApp.repository;
 
+import net.heartheat.userApp.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Component;
 

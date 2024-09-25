@@ -1,9 +1,8 @@
-package net.heartheat.userApp.User;
+package net.heartheat.userApp.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.Data;
-
 import java.time.LocalDate;
 
 @Entity
