@@ -8,8 +8,11 @@ import java.util.List;
 @RequestMapping("/api/v1")
 public class UserController {
 
+    UserService userService;
     @Autowired
-    private UserService userService;
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
 
     @PostMapping("/create-user")
     public boolean createNewUser(@RequestBody User user) {
