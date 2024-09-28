@@ -3,10 +3,11 @@ package net.heartheat.userApp.entity;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.Data;
+
 import java.time.LocalDate;
 
 @Entity
-@Table(name="user")
+@Table
 @Data
 public class User {
     @Id
