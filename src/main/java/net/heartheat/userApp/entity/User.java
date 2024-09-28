@@ -3,7 +3,6 @@ package net.heartheat.userApp.entity;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.Data;
-import org.springframework.stereotype.Indexed;
 
 import java.time.LocalDate;
 

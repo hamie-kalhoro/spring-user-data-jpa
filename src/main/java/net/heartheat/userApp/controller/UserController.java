@@ -44,13 +44,13 @@ public class UserController {
     }
 
     @DeleteMapping("/delete-userbyid/{userId}")
-    public ResponseEntity<?> deleteUserById(@PathVariable Long userId) {
+    public ResponseEntity<User> deleteUserById(@PathVariable Long userId) {
         userService.removeUserById(userId);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
     @PutMapping("/update-user/{myId}")
-    public ResponseEntity<?> updateUser(
+    public ResponseEntity<User> updateUser(
             @PathVariable Long myId, @RequestBody User newUser
     ) {
         User old = userService.updateUserInfo(myId).orElse(null);
